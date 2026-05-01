@@ -1,0 +1,210 @@
+/* Template signature: Alsophila */
+@page {
+  size: A4;
+  margin: 16mm;
+}
+
+:root {
+  --resume-text: #1f2933;
+  --resume-muted: #536171;
+  --resume-accent: #102a43;
+  --resume-rule: #c3ccd5;
+}
+
+html,
+body {
+  background: #ffffff !important;
+}
+
+body {
+  color: var(--resume-text);
+  font-family: "Times New Roman", "Noto Serif SC", "Songti SC", "STSong", SimSun, "宋体", serif;
+  font-size: 10.5pt;
+  line-height: 1.42;
+}
+
+#write {
+  max-width: 178mm;
+  margin: 0 auto;
+  padding: 0;
+  background: #ffffff !important;
+}
+
+#write p,
+#write ul,
+#write ol,
+#write table {
+  margin-top: 0.08rem;
+  margin-bottom: 0.08rem;
+}
+
+#write h1,
+#write h2,
+#write h3,
+#write h4 {
+  color: var(--resume-accent);
+  font-family: Arial, Helvetica, SimHei, "黑体", sans-serif;
+}
+
+#write h1 {
+  margin: 0 0 0.08rem 0;
+  font-size: 22pt;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+#write h1 img {
+  display: block;
+  position: relative;
+  z-index: 10;
+  transform: translateY(14px);
+  background: #ffffff;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+#write h1 + p {
+  margin-top: 0;
+  margin-bottom: 0.28rem;
+  color: var(--resume-accent);
+  font-family: "Times New Roman", "Noto Serif SC", "Georgia", serif;
+  font-size: 13.2pt;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+#write h2 {
+  margin-top: 0.82rem;
+  margin-bottom: 0.35rem;
+  padding-bottom: 0.16rem;
+  border-bottom: 1.1px solid var(--resume-accent);
+  font-size: 11.7pt;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+#write h3 {
+  margin-top: 0.46rem;
+  margin-bottom: 0.08rem;
+  font-size: 10.8pt;
+  font-weight: 700;
+}
+
+#write h3 + p {
+  margin-top: 0;
+  margin-bottom: 0.24rem;
+  font-size: 10.2pt;
+}
+
+#write strong {
+  color: var(--resume-accent);
+  font-weight: 700;
+  font-family: inherit;
+}
+
+#write em,
+#write ol {
+  font-family: "Times New Roman", "Noto Serif SC", "Georgia", serif;
+}
+
+#write ul,
+#write ol {
+  padding-left: 1.15rem;
+}
+
+#write li {
+  margin-bottom: 0.06rem;
+}
+
+#write table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+#write table thead {
+  display: table-row-group;
+}
+
+#write table tr,
+#write table th,
+#write table td {
+  border: none;
+  background: transparent;
+  padding: 0.08rem 0;
+  vertical-align: top;
+}
+
+#write table th {
+  font-weight: 400 !important;
+  text-align: left;
+}
+
+#write > table:first-of-type td,
+#write > table:first-of-type th {
+  font-size: 10pt;
+}
+
+#write > table:first-of-type td:nth-child(1),
+#write > table:first-of-type th:nth-child(1) {
+  width: 22%;
+}
+
+#write > table:first-of-type td:nth-child(2),
+#write > table:first-of-type th:nth-child(2) {
+  width: 36%;
+  font-weight: 700 !important;
+}
+
+#write > table:first-of-type td:nth-child(3),
+#write > table:first-of-type th:nth-child(3) {
+  width: 22%;
+  font-weight: 700 !important;
+}
+
+#write > table:first-of-type td:nth-child(4),
+#write > table:first-of-type th:nth-child(4) {
+  width: 20%;
+  font-weight: 700 !important;
+}
+
+@media screen {
+  html,
+  body {
+    background: #ffffff !important;
+  }
+
+  #write {
+    margin-top: 14px;
+    margin-bottom: 18px;
+    padding: 16mm;
+    box-shadow: 0 14px 32px rgba(16, 42, 67, 0.08);
+  }
+}
+
+@media print {
+  html,
+  body {
+    background: #ffffff !important;
+  }
+
+  body {
+    font-size: 10.4pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  #write {
+    max-width: none;
+    padding: 0;
+    box-shadow: none;
+    background: #ffffff !important;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
